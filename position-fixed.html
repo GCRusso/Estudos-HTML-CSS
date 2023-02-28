@@ -20,10 +20,11 @@ Position Fixed
 
         .bolinha {
             position: fixed;
-            top: 47%;
-            right: 47%;
-            left: 47%;
-          
+            top: calc(85% - 25px);
+            left: calc(85% - 25px);
+            right: calc(85% - 25px);
+            z-index: 2;
+
             display: flex;
             justify-content: center;
             align-items: center;
@@ -35,11 +36,25 @@ Position Fixed
             background-color: red;
             color: white;
         }
+        .retangulo {
+            position: fixed;
+            top: calc(85% - 75px) ;
+            left: calc(85% - 100px);
+            z-index: 1 ;
+
+            width: 200px;
+            height: 150px;
+            background-color: rgb(251, 243, 8);
+        }    
+        
     </style>
 </head>
 <body>
     <div class="bolinha">
         SENAI
+    </div>
+    <div class="retangulo">
+        ASD
     </div>
 
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae porro fugit distinctio optio praesentium neque enim esse doloribus omnis! Laudantium cupiditate in illum quae quis sequi, possimus nesciunt mollitia quisquam.</p>
